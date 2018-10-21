@@ -64,8 +64,8 @@ function startFunction() {
             // CALL next function after timeout
             setTimeout(nextQuestion, 5000);
             //RESET timer
-            clearInterval(counter)
-            wins++
+            clearInterval(counter);
+            wins++;
             $("#timer").hide();
             $("#question").html("<h1>That's right!<br>Get ready for your next question...</h1>");
             $("#scorecard").show();
@@ -75,8 +75,8 @@ function startFunction() {
             
         }else {
             setTimeout(nextQuestion, 5000);
-            clearInterval(counter)
-            losses++
+            clearInterval(counter);
+            losses++;
             $("#timer").hide();
             $("#question").html("<h1>Nope, sorry! Ava was the name of the eerily human robot.<br>Get ready for your next question...</h1>");
             $("#scorecard").show();
@@ -109,10 +109,10 @@ function nextQuestion () {
 
     $("#question").html("<h1>What test is used to decide if a program's AI is truly artificial intelligence?</h1>");
     
-    $("#choices").html("<button> Taste Test </button>"),
-    $("#choices").append("<br><button> Competence Test </button>"),
-    $("#choices").append("<br><button> Tesla Test </button>"),
-    $("#choices").append("<br><button> Turing Test </button>"),
+    $("#choices").html("<button> Taste Test </button>");
+    $("#choices").append("<br><button> Competence Test </button>");
+    $("#choices").append("<br><button> Tesla Test </button>");
+    $("#choices").append("<br><button> Turing Test </button>");
  
     $("#choices button").each(function (index, button) {
          $(button).attr("data-optionValue", index + 1);
@@ -164,10 +164,10 @@ function thirdQuestion () {
        
     $("#question").html("<h1>3. In the 1982 neo-noir <i>Blade Runner</i>, was the protagonist Rick Deckard a replicant?</h1>");
     
-    $("#choices").html("<button> We don't know! </button>"),
-    $("#choices").append("<br><button> I don't care! </button>"),
-    $("#choices").append("<br><button> Yes! </button>"),
-    $("#choices").append("<br><button> No! </button>"),
+    $("#choices").html("<button> We don't know! </button>");
+    $("#choices").append("<br><button> I don't care! </button>");
+    $("#choices").append("<br><button> Yes! </button>");
+    $("#choices").append("<br><button> No! </button>");
     
     $("#choices button").each(function (index, button) {
         $(button).attr("data-optionValue", index + 1);
@@ -177,8 +177,8 @@ function thirdQuestion () {
    
         if (Number(optionVal3) === 1) {
             setTimeout(fourthQuestion, 5000);
-            clearInterval(counter)
-            wins++
+            clearInterval(counter);
+            wins++;
             $("#timer").hide();
             $("#choices").hide();
             $("#question").html("<h1>That's right! Ridley Scott left the film open-ended about whether or not Rick was totally human.<br>Get ready for your next question...</h1>");
@@ -186,8 +186,8 @@ function thirdQuestion () {
                
         }else {
             setTimeout(fourthQuestion, 5000);
-            clearInterval(counter)
-            losses++
+            clearInterval(counter);
+            losses++;
             $("#timer").hide();
             $("#choices").hide();
             $("#question").html("<h1>It's arguable, but officially, the film is open-ended about Rick Deckard's humanity.<br>Get ready for your next question...</h1>");
@@ -195,7 +195,6 @@ function thirdQuestion () {
         }
     })    
 }
-
 
 function fourthQuestion() {
     $("#timer").show();
@@ -219,10 +218,10 @@ function fourthQuestion() {
     }
        
     $("#question").html("<h1>4. In the Disney/Pixar film <i>WALL-E</i>, which other robot does WALL-E befrend?</h1>");
-    $("#choices").html("<button> AVA </button>"),
-    $("#choices").append("<br><button> R2D2 </button>"),
-    $("#choices").append("<br><button> AL </button>"),
-    $("#choices").append("<br><button> EVE </button>"),
+    $("#choices").html("<button> AVA </button>");
+    $("#choices").append("<br><button> R2D2 </button>");
+    $("#choices").append("<br><button> AL </button>");
+    $("#choices").append("<br><button> EVE </button>");
     
     $("#choices button").each(function (index, button) {
             $(button).attr("data-optionValue", index + 1);
@@ -232,8 +231,8 @@ function fourthQuestion() {
    
         if (Number(optionVal4) === 4) {
             setTimeout(fifthQuestion, 5000);
-            clearInterval(counter)
-            wins++
+            clearInterval(counter);
+            wins++;
             $("#timer").hide();
             $("#choices").hide();
             $("#question").html("<h1>You are correct!<br>Get ready for your next question...</h1>");
@@ -241,7 +240,7 @@ function fourthQuestion() {
                
         }else {
             setTimeout(fifthQuestion, 5000);
-            clearInterval(counter)
+            clearInterval(counter);
             losses++
             $("#timer").hide();
             $("#choices").hide();
@@ -271,12 +270,12 @@ function fifthQuestion() {
            $("#timer").text("Time Left: " + questionTimer);
     }
        
-    $("#question").html("<h1>Which modern tv show was inspired by a real-life robot created by Boston Dynamics?</h1>");
+    $("#question").html("<h1>Which modern tv show based an episode on a real-life robot created by Boston Dynamics?</h1>");
     
-    $("#choices").html("<button> Roseanne </button>"),
-    $("#choices").append("<br><button> Black Mirror </button>"),
-    $("#choices").append("<br><button> Westworld </button>"),
-    $("#choices").append("<br><button> Big Bang Theory </button>"),
+    $("#choices").html("<button> Roseanne </button>");
+    $("#choices").append("<br><button> Black Mirror </button>");
+    $("#choices").append("<br><button> Westworld </button>");
+    $("#choices").append("<br><button> Big Bang Theory </button>");
     
     $("#choices button").each(function (index, button) {
             $(button).attr("data-optionValue", index + 1);
@@ -287,7 +286,7 @@ function fifthQuestion() {
         if (Number(optionVal5) === 2) {
             setTimeout(sixthQuestion, 5000);
             clearInterval(counter);
-            wins++
+            wins++;
             $("#timer").hide();
             $("#choices").hide();
             $("#question").html("<h1>That's right! Watch out for the hound...<br>Next question coming up...</h1>");
@@ -295,8 +294,8 @@ function fifthQuestion() {
                
         }else {
             setTimeout(sixthQuestion, 5000);
-            clearInterval(counter)
-            losses++
+            clearInterval(counter);
+            losses++;
             $("#timer").hide();
             $("#choices").hide();
             $("#question").html("<h1>Incorrect. Black Mirror's episode <i>Metalhead</i> is a futuristic reimagining of the Boston Dynamics Dog.<br>Next question coming up...</h1>");
@@ -327,10 +326,10 @@ function sixthQuestion() {
     
     $("#question").html("<h1>Which conversation robot is famous for the creepy things she sometimes says about humans?</h1>");
     
-    $("#choices").html("<button> Sophia </button>"),
-    $("#choices").append("<br><button> Mitsuku </button>"),
-    $("#choices").append("<br><button> Sasha </button>"),
-    $("#choices").append("<br><button> Alli </button>"),
+    $("#choices").html("<button> Sophia </button>");
+    $("#choices").append("<br><button> Mitsuku </button>");
+    $("#choices").append("<br><button> Sasha </button>");
+    $("#choices").append("<br><button> Alli </button>");
    
     $("#choices button").each(function (index, button) {
             $(button).attr("data-optionValue", index + 1);
@@ -340,8 +339,8 @@ function sixthQuestion() {
    
         if (Number(optionVal6) === 1) {
             setTimeout(seventhQuestion, 5000);
-            clearInterval(counter)
-            wins++
+            clearInterval(counter);
+            wins++;
             $("#timer").hide();
             $("#choices").hide();
             $("#question").html("<h1>You are correct!<br>Sophia's pulling up the next question...</h1>");
@@ -349,8 +348,8 @@ function sixthQuestion() {
                
            }else {
             setTimeout(seventhQuestion, 5000);
-            clearInterval(counter)
-            losses++
+            clearInterval(counter);
+            losses++;
             $("#timer").hide();
             $("#choices").hide();
             $("#question").html("<h1>Incorrect.<br>Sophia has a huge presence on youtube thanks to her sometimes-creepy responses.<br>Get ready for your next question...</h1>");
@@ -381,10 +380,10 @@ function seventhQuestion() {
        
     $("#question").html("<h1>7. In Kubrick's <i>2001: A Space Oddity</i>, what was the name of the Artificial Intelligence who ran the ship?</h1>");
     
-    $("#choices").html("<button> Conan </button>"),
-    $("#choices").append("<br><button> Sal </button>"),
-    $("#choices").append("<br><button> Bowman </button>"),
-    $("#choices").append("<br><button> Hal </button>"),
+    $("#choices").html("<button> Conan </button>");
+    $("#choices").append("<br><button> Sal </button>");
+    $("#choices").append("<br><button> Bowman </button>");
+    $("#choices").append("<br><button> Hal </button>");
    
     $("#choices button").each(function (index, button) {
             $(button).attr("data-optionValue", index + 1);
@@ -403,8 +402,8 @@ function seventhQuestion() {
                
         }else {
             setTimeout(endScreen, 4000);
-            clearInterval(counter)
-            losses++
+            clearInterval(counter);
+            losses++;
             $("#timer").hide();
             $("#choices").hide();
             $("#question").html("<h1>Incorrect. HAL 9000, or Hal, ran the ship.</h1>");
