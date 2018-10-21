@@ -28,7 +28,7 @@ function startFunction() {
             clearInterval(counter);
             setTimeout(nextQuestion, 5000);
             $("#timer").hide();
-            $("#question").html("<h>Time's up! The correct answer was <strong>Ava</strong>.<br>Get ready for your next question...</h>");
+            $("#question").html("<h1>Time's up! The correct answer was <strong>Ava</strong>.<br>Get ready for your next question...</h1>");
             losses++;
             $("#scorecard").show();
             $("#scorecard").html("<br>Wins: " + wins + "<br>Losses: " + losses);

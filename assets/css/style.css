@@ -1,0 +1,43 @@
+body {
+    background-color: #40434b;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#game {
+    color: wheat;
+    font-size: 10px;
+    background-color: #131b36;
+    width: 60%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 20px 10px 30px 50px;
+}
+
+header {
+    color: #6683e2;
+    -webkit-text-stroke: 1px #131b36;
+    background-color: #40434b;
+    height: 100px;
+    text-align: center;
+    font-size: 60px; 
+}
+
+button {
+    font-family: "Arial Black", Gadget, sans-serif;
+    background-color: #6683e2;
+    font-size: 30px;
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+#timer {
+    text-align: center;
+    color: #cf0034;
+    font-size: 20px;
+}
+
+#scorecard {
+    text-align: center;
+    font-size: 30px;
+}
